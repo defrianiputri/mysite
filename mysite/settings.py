@@ -78,8 +78,8 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        #'ENGINE': 'django.db.backends.sqlite3',
+        #'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
         #'ENGINE' : 'django.db.backends.mysql',
         #'NAME': 'blog',
         #'USER': 'root',
@@ -89,6 +89,11 @@ DATABASES = {
         #'OPTIONS': {
             #'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
         #}
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'defrianiputri1$blog',
+        'USER': 'defrianiputri1',
+        'PASSWORD': 'defriani28',
+        'HOST': 'defrianiputri1.mysql.pythonanywhere-services.com',
     }
 }
 
