@@ -17,9 +17,11 @@ from django.urls import path
 from django.contrib import admin
 
 from blog.views import main_dashboard
+from blog.views import post
 
 
 urlpatterns = [
     path('home/', main_dashboard, name='home'),
-    path('admin/', admin.site.urls)
+    path('admin/', admin.site.urls),
+    path('home/post', post, name='post')
 ]
